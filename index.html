@@ -20,7 +20,19 @@
   <script src="web/common-function.js"></script>
 </head>
 <body>
-  <h1>Online JavaScript Beautifier <span id="version-number"></span></h1>
+  <select name="language" id="language">
+    <option value="auto">Auto Detect</option>
+    <option value="css">CSS</option>
+    <option value="html">HTML</option>
+    <option value="js">JavaScript</option>
+  </select>
+
+  <textarea id="source" rows="30" cols="160"></textarea>
+  <button class="submit"><strong>Beautify JavaScript or HTML</strong> <em>(ctrl-enter)</em> </button>
+
+  <hr/>
+
+  <h1>Online JavaScript Beautifier</h1>
   <div id="about">
     <p> <a class="self" href="./">Beautify, unpack or deobfuscate JavaScript and HTML, make JSON/JSONP readable, etc.</a> </p>
     <p> All of the source code is completely free and open, available on <a href="https://github.com/beautify-web/js-beautify">GitHub</a> under MIT licence, <br/>and we have a command-line version, python library and a <a href="https://npmjs.org/package/js-beautify">node package</a> as well. </p>
@@ -105,18 +117,7 @@
       </td>
     </tr>
   </table>
-  <div style="line-height:0;">
-    <select name="language" id="language">
-      <option value="auto">Auto Detect</option>
-      <option value="css">CSS</option>
-      <option value="html">HTML</option>
-      <option value="js">JavaScript</option>
-    </select>
-    <button class="submit"><strong>Beautify JavaScript or HTML</strong> <em>(ctrl-enter)</em> </button>
-    <textarea id="source" rows="30" cols="160"></textarea>
-    <button class="submit"><strong>Beautify JavaScript or HTML</strong> <em>(ctrl-enter)</em> </button>
-  </div>
-  
+  <hr/>
   <p style="margin:6px 0 0 0">Your Selected Options (JSON):</p>
   <div style="line-height: 0">
     <textarea readonly id="options-selected" rows="10" cols="40"></textarea>
@@ -163,6 +164,7 @@
     <p style="text-align:right"> <a href="#" style="color: #ccc; border-bottom: 1px dashed #ccc; text-decoration: none;" onclick="run_tests(); return false;">Run the tests</a> </p>
   </div>
   <div id="testresults"></div>
-  <script src="web/onload.js"></script>
+
+  <script defer src="web/onload.js"></script>
 </body>
 </html>
