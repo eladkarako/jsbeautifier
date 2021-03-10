@@ -1,23 +1,23 @@
 {
   "brace_style"               : "collapse"
- ,"break_chained_methods"     : false
- ,"comma_first"               : false
- ,"e4x"                       : false
- ,"end_with_newline"          : false
- ,"eval_code"                 : false
+ ,"break_chained_methods"     : true
+ ,"comma_first"               : true
+ ,"e4x"                       : true
+ ,"end_with_newline"          : true
+ ,"eval_code"                 : true
  ,"indent_char"               : " "
- ,"indent_inner_html"         : false
+ ,"indent_inner_html"         : true
  ,"indent_level"              : 0
- ,"indent_scripts"            : "keep"
- ,"indent_size"               : 4
+ ,"indent_scripts"            : "normal"
+ ,"indent_size"               : 2
  ,"indent_with_tabs"          : false
- ,"jslint_happy"              : false
+ ,"jslint_happy"              : true
  ,"keep_array_indentation"    : false
  ,"keep_function_indentation" : false
- ,"max_preserve_newlines"     : 10
- ,"preserve_newlines"         : true
+ ,"max_preserve_newlines"     : -1
+ ,"preserve_newlines"         : false
  ,"space_after_anon_function" : false
  ,"space_before_conditional"  : true
- ,"unescape_strings"          : false
+ ,"unescape_strings"          : true
  ,"wrap_line_length"          : 0
 }
